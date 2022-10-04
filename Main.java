@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-/*byte aByte=-128;
+byte aByte=-128;
 short aShort=32767;
 int aInt=2000000000;
 long aLong=2000000000000000000L;
@@ -13,13 +13,13 @@ char aChar='a';
         System.out.println((char) 97 +1);
         System.out.println((char) 97.894949);
         System.out.println((int)(97.564784));
-//Scanner sc= new Scanner(System.in);
-        //System.out.println(aByte);
-        //System.out.println(aShort);
-       // System.out.println(aInt);
+Scanner sc= new Scanner(System.in);
+        System.out.println(aByte);
+        System.out.println(aShort);
+        System.out.println(aInt);
         System.out.println(aBoolean);*/
 
-        /*int a=11, b=5;
+        int a=11, b=5;
         //int res;
         double res;
         res=a+b;
@@ -42,7 +42,7 @@ char aChar='a';
 
     }
 }
-*/
+
         int i = 0;
         System.out.println(i++);
         System.out.println(i);
