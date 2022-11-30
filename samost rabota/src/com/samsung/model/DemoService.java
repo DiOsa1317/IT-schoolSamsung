@@ -6,7 +6,7 @@ public class DemoService {
 
     }
     public void demo() {
-        this.university = new University("Moscow", university.listOfStudents, university.listOfTeachers);
+        this.university = new University("Moscow", listOfStudents, university.listOfTeachers);
             Student theBest = new Student("Григорий",
                     "Ежов",
                     "Александрович",

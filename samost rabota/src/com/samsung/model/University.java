@@ -2,8 +2,8 @@ package com.samsung.model;
 
 public class University implements Printer {
     String adress;
-    String[] listOfStudents;
-    String[] listOfTeachers;
+    Student[] listOfStudents;
+    Teacher[] listOfTeachers;
 
     public String[] getListOfStudents() {
         return listOfStudents;
@@ -17,7 +17,7 @@ public class University implements Printer {
         return adress;
     }
 
-     public University(String adress, String[] listOfStudents, String[] listOfTeachers) {
+     public University(String adress, Student[] listOfStudents, Teacher[] listOfTeachers) {
         this.adress=adress;
         this.listOfStudents = listOfStudents;
         this.listOfTeachers = listOfTeachers;
@@ -26,11 +26,11 @@ public class University implements Printer {
 
     @Override
     public void printInfoToConsoleSuperКрасиВо() {
-            StringBuilder sb= new StringBuilder();
-                    sb.append("**************** this.getClass() ******************\n")
-            .append("Adress: ").append(getAdress() + "\n")
-                    .append("Our students: ").append(getListOfStudents())
-                    .append("Our teachers: ").append(getListOfTeachers())
-                    .append("***************************************************\n");
+        System.out.printf("**************** this.getClass() ******************\n");
+        System.out.printf("Adress: " + getAdress() + "\n");
+        System.out.printf("Our students:\n");
+        //for(int i=0; i<s)
+        System.out.printf("Our teachers: " + getListOfTeachers());
+        System.out.printf("***************************************************\n");
     }
 }

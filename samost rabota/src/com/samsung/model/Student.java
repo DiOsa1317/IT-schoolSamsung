@@ -27,14 +27,12 @@ public class Student extends User {
     }
 
     public void printInfoToConsoleSuperКрасиВо() {
-        StringBuilder sb= new StringBuilder()
-        .append("^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^\n");
-                sb.append(this.getClass() + "\n")
-        .append("Name: ").append(getName())
-                        .append("Surname: ").append(getSurname() + "\n")
-                        .append("Patronymic: ").append(getPatronymic() + "\n")
-                        .append("Phone: ").append(getPhone() + "\n")
-                        .append("Group: ").append(getGroup() + "\n")
-                        .append("^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^\n");
+        System.out.printf("^=^=^=^=^=^=^=^ "+ getClass() + " ^=^=^=^=^=^=^=^=^=^=^=^=^=^=^\n");
+        System.out.printf("Name: "+ getName() + "\n");
+        System.out.printf("Surname: " + getSurname() + "\n");
+        System.out.printf("Patronymic: " + getPatronymic() + "\n");
+        System.out.printf("Phone: "+ getPhone() + "\n");
+        System.out.printf("Group: " + getGroup() + "\n");
+        System.out.printf("^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^\n");
     }
 }

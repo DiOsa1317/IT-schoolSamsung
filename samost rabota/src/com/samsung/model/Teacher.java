@@ -29,12 +29,11 @@ public class Teacher extends User{
     }
 
     public void printInfoToConsoleSuperКрасиВо() {
-        StringBuilder sb= new StringBuilder()
-                .append("0-0?=-_-=0-0?=-_-=0-0?=-_-=0-0?=-_-0-0?\n");
-        sb.append(this.getClass() + "\n")
-                .append("Full name: ").append(getName()).append(getPatronymic()).append(getSurname() + "\n")
-                .append("Subject: ").append(getSubject() + "\n")
-                .append("Phone: ").append(getPhone() + "\n")
-                .append("0-0?=-_-=0-0?=-_-=0-0?=-_-=0-0?=-_-0-0?\n");
+        System.out.printf("0-0?=-_-=0-0?=-_-=0-0? "+ getClass() + " 0-0?=-_-=0-0?=-_-=0-0?\n");
+        System.out.printf("Full name: "+ getName() + " " + getPatronymic() + " " + getSurname() + "\n");
+        System.out.printf("Subject: " + getSubject() + "\n");
+        System.out.printf("Phone: "+ getPhone() + "\n");
+        System.out.printf("^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^\n");
     }
+
 }
