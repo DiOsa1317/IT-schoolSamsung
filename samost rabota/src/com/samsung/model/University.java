@@ -5,11 +5,11 @@ public class University implements Printer {
     Student[] listOfStudents;
     Teacher[] listOfTeachers;
 
-    public String[] getListOfStudents() {
+    public Student[] getListOfStudents() {
         return listOfStudents;
     }
 
-    public String[] getListOfTeachers() {
+    public Teacher[] getListOfTeachers() {
         return listOfTeachers;
     }
 
@@ -26,11 +26,14 @@ public class University implements Printer {
 
     @Override
     public void printInfoToConsoleSuperКрасиВо() {
-        System.out.printf("**************** this.getClass() ******************\n");
+        System.out.printf("**************** OUR UNIVERSITY ******************\n");
         System.out.printf("Adress: " + getAdress() + "\n");
-        System.out.printf("Our students:\n");
-        //for(int i=0; i<s)
-        System.out.printf("Our teachers: " + getListOfTeachers());
+        System.out.printf("OUR STUDENTS:\n");
+        for(int i=0; i<listOfStudents.length; i++)
+            listOfStudents[i].printInfoToConsoleSuperКрасиВо();
+        System.out.printf("OUR TEACHERS:\n");
+        for(int i=0; i<listOfTeachers.length; i++)
+            listOfTeachers[i].printInfoToConsoleSuperКрасиВо();
         System.out.printf("***************************************************\n");
     }
 }

@@ -19,7 +19,8 @@ public abstract class User implements Printer {
     }
 
     public String getPhone() {
-        return phone;
+        if(phone == null) return "Нет информации";
+        else return phone;
     }
 
     public abstract void sayHello();

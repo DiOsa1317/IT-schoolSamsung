@@ -13,7 +13,7 @@ public class Student extends User {
 
     @Override
     public void sayHello() {
-        System.out.println("Привет! Я студент, моё имя "+ getName() + " " + getSurname());
+        System.out.println("Привет! Я студент, моё имя "+ getName() + " " + getSurname() + ".");
     }
 
     public Student(String name, String surname, String patronymic, String group) {
@@ -22,17 +22,17 @@ public class Student extends User {
     }
 
     public Student(Student student) {
-        super(student.getName(), student.getSurname(), student.getSurname(), student.getPhone());
+        super(student.getName(), student.getSurname(), student.getPatronymic(), student.getPhone());
         this.group=student.getGroup();
     }
 
     public void printInfoToConsoleSuperКрасиВо() {
-        System.out.printf("^=^=^=^=^=^=^=^ "+ getClass() + " ^=^=^=^=^=^=^=^=^=^=^=^=^=^=^\n");
+        System.out.printf("^=^=^=^ STUDENT ^=^=^=^=^\n");
         System.out.printf("Name: "+ getName() + "\n");
         System.out.printf("Surname: " + getSurname() + "\n");
         System.out.printf("Patronymic: " + getPatronymic() + "\n");
         System.out.printf("Phone: "+ getPhone() + "\n");
         System.out.printf("Group: " + getGroup() + "\n");
-        System.out.printf("^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^\n");
+        System.out.printf("^=^=^=^=^=^=^=^=^=^=^=^=^=^\n");
     }
 }

@@ -6,7 +6,6 @@ public class DemoService {
 
     }
     public void demo() {
-        this.university = new University("Moscow", listOfStudents, university.listOfTeachers);
             Student theBest = new Student("Григорий",
                     "Ежов",
                     "Александрович",
@@ -36,7 +35,9 @@ public class DemoService {
         );
         Student[] listOfStudents={theBest, problem, spy};
         Teacher[] listOfTeachers={decan, kind};
+        university = new University("Moscow", listOfStudents,  listOfTeachers);
         university.printInfoToConsoleSuperКрасиВо();
+        System.out.println();
         theBest.sayHello();
         decan.sayHello();
 
